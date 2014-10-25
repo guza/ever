@@ -1,12 +1,22 @@
 <h1> welcome. </h1>
 <h4><%= flash[:alert] %></h4>
-<div> <a href = "/user/signup"> sign up </a>
+<div>
+ <a href="/user/signup">sign up</a> <a href="/user/login">log in</a>
+
 <table>
-	<tr>
-	<td>IceBox</td>
+<tr>
+	<td>Ice</td>
+	<% @posts.reverse.each do |post| %>
+	<tr><td><%= post.content %></td></tr>
+	<% end %>
 	<td>Emergency</td>
 	<td>In Progress</td>
 	<td>Testing</td>
 	<td>Complete!</td>
-	</tr>
+</tr>
 </table>
+
+<a href = "/scrum/addToDo.html">ToDoMore</a>
+
+
+

@@ -1,0 +1,11 @@
+<h4><%= flash[:alert] %></h4>
+
+<div style="background-color:#e9eaed;">
+  <h1>ToDo</h1>
+  <form action="/scrum/todo_complete" method="post">
+    Category: <input type="text" name="category" placeholder="category?"><br>
+    Content: <br>
+    <textarea name="content" cols="40" rows="5" placeholder="ToDoList."></textarea>
+    <input type="submit" value="todo">
+  </form>
+</div>
